@@ -15,4 +15,13 @@ Migración de una VM a la nube de google usando los comandos del SDK de Google
 - In the GCP console go to: Cloud Storage > Buckets > Create Bucket
 - Name: Select the name of your bucket | Location type: Region | Location: choose the region you previously specified
 - Leave the rest otions by default and click "CREATE"
-- Back to your SDK console and use this command for copy your OVA in the bucket: gsutil cp "YOUR_OVA_PATH.ova" gs://YOUR_BUCKET_NAME
+- Back to your SDK console and use this command for copy your OVA in the bucket: 
+```cmd
+gsutil cp "YOUR_OVA_PATH.ova" gs://YOUR_BUCKET_NAME
+```
+
+## 3- Import the OVA to a new instance
+- Write the next command:
+```cmd
+gcloud compute instances import gcpinstanename --os=[YOUR_VM_OS] --source-uri="gs://[YOUR_BUCKET_NAME]/[YOUR_OVA_NAME].ova"
+```
