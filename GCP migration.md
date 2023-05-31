@@ -9,3 +9,10 @@ Migración de una VM a la nube de google usando los comandos del SDK de Google
 - Open the link and sing in with your GCP account, once you have sing clik on the "Allow" button of the next page
 - "Pick cloud project to use:" and select the project in which you have your credits (the project that you want to use for the migration --> IF YOU HAVE ONE ALREADY)
 - "Do you want to configure a default Compute Region and Zone? (Y/n)?" Type "Y" and choose the number of your region or the region in wich you want to create the project
+
+## 2- Export your on-Premise or Virtualized VM OVA to a GCP bucket
+- Start a export job and get the .ova file of your VM (In VMware: File --> export to OVF... --> Change the extension to .ova)
+- In the GCP console go to: Cloud Storage > Buckets > Create Bucket
+- Name: Select the name of your bucket | Location type: Region | Location: choose the region you previously specified
+- Leave the rest otions by default and click "CREATE"
+- Back to your SDK console and use this command for copy your OVA in the bucket: gsutil cp "YOUR_OVA_PATH.ova" gs://YOUR_BUCKET_NAME
