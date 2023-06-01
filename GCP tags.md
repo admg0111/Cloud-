@@ -1,5 +1,6 @@
-## Working with tags
-#Create a tag
+# Working with tags
+
+## Create a tag
 
 ```cmd
 gcloud resource-manager tags keys create [SHORT_NAME] \
