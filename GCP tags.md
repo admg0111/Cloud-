@@ -16,9 +16,9 @@ gcloud resource-manager tags keys create Departamento \
 
 - Describe:
 ```cmd
-gcloud resource-manager tags keys describe [tagKeys/YOUR_TAG_ID] or [YOUR_PROJECT_ID/TAG_SHORT_NAME]
+gcloud resource-manager tags keys describe [tagKeys/YOUR_TAG_ID]
 ```
 ```cmd
-gcloud resource-manager tags keys describe 485697030/Departamento
+gcloud resource-manager tags keys describe [YOUR_PROJECT_ID/TAG_SHORT_NAME]
 ```
 - List:
