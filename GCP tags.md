@@ -42,7 +42,13 @@ gcloud resource-manager tags keys list --parent=[projects/YOUR_PROJECT_ID]
 ```cmd
 gcloud resource-manager tags keys list --parent=[organizations/YOUR_ORGANIZATION_ID]
 ```
-
+List tag values
+```cmd
+gcloud resource-manager tags keys list --parent=[tagValues/YOUR_TAG_VALUE_ID]
+```
+```cmd
+gcloud resource-manager tags keys list --parent=[organizations/YOUR_ORGANIZATION_ID]
+```
 
 
 ## 
