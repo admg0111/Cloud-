@@ -14,11 +14,17 @@ gcloud resource-manager tags keys create Departamento \
 
 ## Get tag info
 
-- Describe:
+- Describe keys:
 ```cmd
-gcloud resource-manager tags keys describe [tagKeys/YOUR_TAG_ID]
+gcloud resource-manager tags keys describe [tagKeys/YOUR_TAG_KEY_ID]
 ```
 ```cmd
 gcloud resource-manager tags keys describe [YOUR_PROJECT_ID/TAG_SHORT_NAME]
 ```
-- List:
+- Describe tag values:
+```cmd
+gcloud resource-manager tags values describe [tagValues/YOUR_TAG_VALUE_ID]
+```
+```cmd
+gcloud resource-manager tags values describe [YOUR_PROJECT_ID/TAG_KEY_SHORT_NAME/TAG_VALUE_SHORT_NAME]
+```
