@@ -29,8 +29,8 @@ gcloud resource-manager tags values describe [tagValues/YOUR_TAG_VALUE_ID]
 gcloud resource-manager tags values describe [YOUR_PROJECT_ID/TAG_KEY_SHORT_NAME/TAG_VALUE_SHORT_NAME]
 ```
 
-## Update tags and add description
+## Add a description and update the tag
 ```cmd
-gcloud resource-manager tags keys update TAGKEY_NAME \
-    --description=NEW_DESCRIPTION
+gcloud resource-manager tags keys update [tagKeys/YOUR_TAG_KEY_ID] \
+    --description=[DESCRIPTION]
 ```
