@@ -1,5 +1,5 @@
 # GCP Migration
-Migración de una VM a la nube de google usando los comandos del SDK de Google
+Migrating a VM to the google cloud using Google SDK commands.
 
 ## 1- Download the Google Cloud SDK
 - https://cloud.google.com/sdk/docs/downloads-interactive?hl=es-419
